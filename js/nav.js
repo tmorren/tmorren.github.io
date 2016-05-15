@@ -21,15 +21,30 @@ $(document).ready(function(){
 
 	/* Transparent to Solid Nav*/
 	$(window).scroll(function(){
-		var height = $("header").height();
 		var scrollTop = $(window).scrollTop();
+		var header = $("header").height();
 
-		if (scrollTop >= height - 40){
+		if (scrollTop >= header/2){
 			$("nav").addClass('solid-nav');
-
 		} else {
 			$("nav").removeClass('solid-nav');
 		}
 	})
+
+	/* Smooth Scroll Function */
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
 
 });

@@ -6,9 +6,12 @@ body {
   padding: 0;
 }
 
+body p {
+  margin-top: 0;
+}
+
 .row {
   width: 100%;
-  border: 1px solid red;
   box-sizing: border-box;
   clear: both;
 }
@@ -18,7 +21,6 @@ body {
   max-width: 1600px;
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
-  border: 1px solid blue;
   box-sizing: border-box;
   clear: both;
 }
@@ -43,15 +45,28 @@ nav ul {
 }
 
 nav ul li {
-  color: red;
   display: inline-block;
   padding-right: 1em;
   padding-left: 1em;
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navLogo {
+  display: none;
+}
+
 .solid-nav {
   background-color: white;
-  transition: background-color 0.2s linear;
+  box-shadow: 0 0 10px #d3d3d3;
+  transition: all 0.4s linear;
+}
+
+.solid-nav #navLogo {
+  display: inline;
 }
 
 #btn-small-nav {
@@ -101,4 +116,64 @@ header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-background-min.jpeg");
   background-position: center;
+  position: relative;
+}
+
+header div {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header div h3 {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+header #btnDown {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#btnDown {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#downArrow {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border: 0.1em solid white;
+  border-radius: 50%;
+}
+
+#downArrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 0.75em;
+  width: 1em;
+  height: 1em;
+  border-top: 0.1em solid white;
+  border-right: 0.1em solid white;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-left: .87em;
+}
+
+/*=======================
+		About Section
+=======================*/
+#aboutSection {
+  background-color: #f6f6f6;
 }
