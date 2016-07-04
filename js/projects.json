@@ -1,0 +1,10 @@
+{
+"projects":[
+    {
+    	"name" : "Portfolio Website", 
+    	"description" : "This is my Portfolio Website",
+    	"image" : "img/project-portfolio.png",
+    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
+    }
+]
+}

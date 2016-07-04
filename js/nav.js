@@ -24,7 +24,7 @@ $(document).ready(function(){
 		var scrollTop = $(window).scrollTop();
 		var header = $("header").height();
 
-		if (scrollTop >= header/2){
+		if (scrollTop >= header/4){
 			$("nav").addClass('solid-nav');
 		} else {
 			$("nav").removeClass('solid-nav');
@@ -39,12 +39,11 @@ $(document).ready(function(){
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
 	        $('html, body').animate({
-	          scrollTop: target.offset().top
+	          scrollTop: target.offset().top - $('nav').height()
 	        }, 1000);
 	        return false;
 	      }
 	    }
 	  });
 	});
-
 });

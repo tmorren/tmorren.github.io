@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Tyler Morren | Web Developer</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body id="top">
+<body id="top" ng-app="projectsApp">
 	<!-- Universal Navigation Bar -->
 	<nav class="row">
 		<div class="container">
@@ -42,16 +43,42 @@
 		<a id="btnDown" href="#aboutSection"><span id="downArrow"></span></a>
 	</header>
 
-	<section id="aboutSection" class="row" style="height: 1000px;">
+	<!-- About Section -->
+	<section id="aboutSection" class="row">
 		<div class="container">
 			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</section>
+
+	<!-- Education Section -->
+	<section id="educationSection" class="row">
+		<div class="container">
+			<h2>Education</h2>
+			<h3>Rutgers University</h3>
+			<h4>Civil Engineering</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projectsSection" class="row">
+		<div class="container" data-ng-controller="projectsCtrl">
+			<h2>Projects</h2>
+			<ul>
+				<li data-ng-repeat="project in projects">
+					<h3 data-ng-model="project.name"></h3>
+				</li>
+			</ul>
 		</div>
 	</section>
 
 	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/scripts.js"></script>
 	<script src="js/nav.js"></script>
-
 
 </body>
 </html>

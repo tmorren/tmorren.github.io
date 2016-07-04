@@ -4,15 +4,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cabin", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body p {
   margin-top: 0;
   font-size: 1.5em;
+  line-height: 1.75em;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Cabin", sans-serif;
   text-transform: uppercase;
 }
 
@@ -24,7 +26,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 .container {
   width: 90%;
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 0 auto 0 auto;
   padding: 2em 1em 2em 1em;
   box-sizing: border-box;
@@ -55,6 +57,7 @@ nav ul {
 }
 
 nav ul li {
+  font-family: "Cabin", sans-serif;
   display: inline-block;
   padding-right: 1em;
   padding-left: 1em;
@@ -82,8 +85,16 @@ nav ul li a {
   transition: all 0.4s linear;
 }
 
+.solid-nav a {
+  color: #333333;
+}
+
 .solid-nav #navLogo {
   display: inline;
+}
+
+.solid-nav-text {
+  color: #333333;
 }
 
 #btn-small-nav {
