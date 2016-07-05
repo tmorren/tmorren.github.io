@@ -220,3 +220,57 @@ header #btnDown {
 #aboutSection h2 {
   color: #35869D;
 }
+
+/*=======================
+		Education Section
+=======================*/
+#educationSection .eduYears {
+  font-size: .75em;
+}
+
+/*=======================
+		Projects Section
+=======================*/
+#projectsSection {
+  background-color: #f6f6f6;
+}
+
+#projectsSection ul {
+  padding-left: 0;
+}
+
+#projectsSection ul li {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  background-color: white;
+}
+
+#projectsSection ul li img {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid black;
+  float: left;
+}
+
+#projectsSection ul li .projectInfo {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding: .5em 2em .5em 2em;
+}
+
+#projectsSection ul li .projectInfo p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+#projectsSection ul li .projectInfo h3 {
+  margin-top: 0;
+}
+
+.projectContain {
+  clear: both;
+  margin-top: 2em;
+}

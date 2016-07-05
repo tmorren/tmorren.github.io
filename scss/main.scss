@@ -1,5 +1,6 @@
 $orange: #ef3e24;
 $blue: #35869D;
+$gray: #f6f6f6;
 $light-text: white;
 $dark-text: #333333;
 $header-font: 'Cabin', sans-serif;
@@ -207,8 +208,59 @@ $paragraph-font: 'Roboto', sans-serif;
 		About Section
 =======================*/
 	#aboutSection{
-		background-color:#f6f6f6;
+		background-color: $gray;
 		h2{
 			color: $blue;
 		}
+	}
+
+/*=======================
+		Education Section
+=======================*/
+	#educationSection{
+		.eduYears{
+			font-size: .75em;
+		}
+	}
+
+/*=======================
+		Projects Section
+=======================*/
+	#projectsSection{
+		background-color: $gray;
+		ul{
+			padding-left: 0;
+			li{
+				list-style: none;
+				display: block;
+				overflow: hidden;
+				background-color: white;
+				img{
+					width: 50%;
+					display: block;
+					box-sizing: border-box;
+					border: 3px solid black;
+					float: left;
+				}
+				.projectInfo{
+					width: 50%;
+					box-sizing: border-box;
+					float: left;
+					padding: .5em 2em .5em 2em;
+					p{
+						font-size: 1.25em;
+						line-height: 1.5em;
+					}
+					h3{
+						margin-top: 0;
+					}
+				}
+			}
+
+		}
+	}
+
+	.projectContain{
+		clear: both;
+		margin-top: 2em;
 	}

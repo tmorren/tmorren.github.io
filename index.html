@@ -16,9 +16,9 @@
 			<a href="#top" id="navLogo"><img src="img/tsm_black.png"></a>
 			<ul id="big-nav">
 				<li><a href="#aboutSection">About</a></li>
-				<li><a>Education</a></li>
-				<li><a>Projects</a></li>
-				<li><a>Contact</a></li>
+				<li><a href="#educationSection">Education</a></li>
+				<li><a href="#projectsSection">Projects</a></li>
+				<li><a href="#contactSection">Contact</a></li>
 			</ul>
 			<i id="btn-small-nav" class="fa fa-bars fa-2x burger-icon"></i>
 		</div>
@@ -27,10 +27,10 @@
 	<!-- Mobile Navigation Menu -->
 	<div id="mobile-menu">
 		<ul>
-			<li><a>About</a></li>
-			<li><a>Education</a></li>
-			<li><a>Projects</a></li>
-			<li><a>Contact</a></li>
+			<li><a href="#aboutSection">About</a></li>
+			<li><a href="#educationSection">Education</a></li>
+			<li><a href="#projectsSection">Projects</a></li>
+			<li><a href="#contactSection">Contact</a></li>
 		</ul>
 	</div>
 
@@ -47,8 +47,8 @@
 	<section id="aboutSection" class="row">
 		<div class="container">
 			<h2>About</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>My name is <strong>Tyler S. Morren</strong>, and I am a <strong>Web Developer</strong>. I originally went to school for Civil Engineering, but during my last semester, I realized I had made a mistake. So I decided to start learning about something that had always interested me. I began teaching myself the basics or Web Development while finishing school.</p>
+			<p>Two days after I graduated with my Civil Engineering degree, I was back in school learning Web Development. Since then, I have received a Web Development Certificate and have continued to learn as much as I can about the field. I have experience with <strong>HTML, CSS, JavaScript, jQuery, PHP, MySQL, WordPress and AngularJS.</strong></p>
 		</div>
 	</section>
 
@@ -56,8 +56,12 @@
 	<section id="educationSection" class="row">
 		<div class="container">
 			<h2>Education</h2>
-			<h3>Rutgers University</h3>
+			<h3>Rutgers University <span class="eduYears">(2010-2015)</span></h3>
 			<h4>Civil Engineering</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<h3>Raritan Valley Community College <span class="eduYears">(2015-2016)</span></h3>
+			<h4>Web Development Certificate</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</section>
@@ -67,11 +71,29 @@
 		<div class="container" data-ng-controller="projectsCtrl">
 			<h2>Projects</h2>
 			<ul>
-				<li data-ng-repeat="project in projects">
-					<h3 data-ng-bind="project.name"></h3>
+				<li data-ng-repeat="project in projects" class="projectContain">
 					<img data-ng-src="img/{{ project.image }}">
+					<div class="projectInfo">
+						<h3 data-ng-bind="project.name"></h3>
+						<p data-ng-bind="project.description"></p>
+						<a data-ng-href="{{ project.link }}" target="_blank">Link</a>
+						<ul>
+							<li data-ng-repeat="tech in project.tech" data-ng-bind="tech"></li>
+						</ul>
+					<div>
 				</li>
 			</ul>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contactSection" class="row">
+		<div class="container">
+			<h2>Contact</h2>
+			<p>Have any questions?</p>
+			<a ><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+			<a><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/tmorren9/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
