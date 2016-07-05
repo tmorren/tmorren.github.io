@@ -91,6 +91,7 @@ nav ul li a {
 
 .solid-nav #navLogo {
   display: inline-block;
+  border: 1px solid red;
 }
 
 .solid-nav-text {
@@ -101,6 +102,7 @@ nav ul li a {
   display: none;
   float: right;
   margin-top: .3em;
+  border: 1px solid blue;
 }
 
 #mobile-menu {

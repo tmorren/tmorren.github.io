@@ -93,6 +93,7 @@ $paragraph-font: 'Roboto', sans-serif;
 	    }
 	    #navLogo{
 	    	display: inline-block;
+	    	border: 1px solid red;
 	    }
 	}
 
@@ -104,6 +105,7 @@ $paragraph-font: 'Roboto', sans-serif;
 		display: none;
 		float: right;
 		margin-top: .3em;
+		border: 1px solid blue;
 	}
 
 	#mobile-menu{
