@@ -69,7 +69,7 @@
 			<ul>
 				<li data-ng-repeat="project in projects">
 					<h3 data-ng-bind="project.name"></h3>
-					<img src="{{ project.image }}">
+					<img data-ng-src="img/{{ project.image }}">
 				</li>
 			</ul>
 		</div>

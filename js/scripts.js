@@ -5,13 +5,13 @@ app.controller('projectsCtrl', function($scope){
 		{
 			"name" : "Portfolio Website", 
 	    	"description" : "This is my Portfolio Website",
-	    	"image" : "img/project-portfolio.png",
+	    	"image" : "project-portfolio.png",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
 		},
 		{
 			"name" : "Portfolio Website", 
 	    	"description" : "This is my Portfolio Website",
-	    	"image" : "img/project-portfolio.png",
+	    	"image" : "project-portfolio.png",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
 		}
 	];
