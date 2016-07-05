@@ -103,7 +103,7 @@ $paragraph-font: 'Roboto', sans-serif;
 	#btn-small-nav{
 		display: none;
 		float: right;
-		margin-top: .4em;
+		margin-top: .3em;
 	}
 
 	#mobile-menu{
@@ -139,6 +139,7 @@ $paragraph-font: 'Roboto', sans-serif;
 
 		#btn-small-nav{
 			display: block;
+			float: right;
 		}
 	}
 
@@ -230,6 +231,14 @@ $paragraph-font: 'Roboto', sans-serif;
 		background-color: $gray;
 		ul{
 			padding-left: 0;
+			.techItem{
+				display: inline-block;
+				border: 2px solid $blue;
+				font-weight: bold;
+				color: $blue;
+				margin-right: .5em;
+				padding: .2em;
+			}
 			li{
 				list-style: none;
 				display: block;

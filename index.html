@@ -57,11 +57,11 @@
 		<div class="container">
 			<h2>Education</h2>
 			<h3>Rutgers University <span class="eduYears">(2010-2015)</span></h3>
-			<h4>Civil Engineering</h4>
+			<h4><i>Civil Engineering</i></h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 			<h3>Raritan Valley Community College <span class="eduYears">(2015-2016)</span></h3>
-			<h4>Web Development Certificate</h4>
+			<h4><i>Web Development Certificate</i></h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</section>
@@ -76,9 +76,9 @@
 					<div class="projectInfo">
 						<h3 data-ng-bind="project.name"></h3>
 						<p data-ng-bind="project.description"></p>
-						<a data-ng-href="{{ project.link }}" target="_blank">Link</a>
+						<a data-ng-href="{{ project.link }}" target="_blank"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
 						<ul>
-							<li data-ng-repeat="tech in project.tech" data-ng-bind="tech"></li>
+							<li data-ng-repeat="tech in project.tech" data-ng-bind="tech" class="techItem"></li>
 						</ul>
 					<div>
 				</li>
