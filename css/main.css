@@ -90,7 +90,7 @@ nav ul li a {
 }
 
 .solid-nav #navLogo {
-  display: inline;
+  display: inline-block;
 }
 
 .solid-nav-text {
