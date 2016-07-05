@@ -9,7 +9,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body id="top" ng-app="projectsApp">
+<body id="top">
 	<!-- Universal Navigation Bar -->
 	<nav class="row">
 		<div class="container">
@@ -63,12 +63,13 @@
 	</section>
 
 	<!-- Projects Section -->
-	<section id="projectsSection" class="row">
+	<section id="projectsSection" class="row" data-ng-app="projectsApp">
 		<div class="container" data-ng-controller="projectsCtrl">
 			<h2>Projects</h2>
 			<ul>
 				<li data-ng-repeat="project in projects">
-					<h3 data-ng-model="project.name"></h3>
+					<h3 data-ng-bind="project.name"></h3>
+					<img src="{{ project.image }}">
 				</li>
 			</ul>
 		</div>
@@ -77,8 +78,9 @@
 	<!-- Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="js/jquery-2.2.3.js"></script>
-	<script src="js/scripts.js"></script>
 	<script src="js/nav.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+			
 
 </body>
 </html>

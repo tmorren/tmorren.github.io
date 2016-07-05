@@ -1,12 +1,19 @@
-/* Retrieve JSON data for projects */
 var app = angular.module('projectsApp', []);
 
-app.controller('projectsCtrl', function($scope, $http){
+app.controller('projectsCtrl', function($scope){
+	$scope.projects = [
+		{
+			"name" : "Portfolio Website", 
+	    	"description" : "This is my Portfolio Website",
+	    	"image" : "img/project-portfolio.png",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
+		},
+		{
+			"name" : "Portfolio Website", 
+	    	"description" : "This is my Portfolio Website",
+	    	"image" : "img/project-portfolio.png",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
+		}
+	];
 
-	$scope.projects = [];
-
-	//Gets the JSON data from the link
-	$http.get('js/projects.json').then(function(res){
-  			$scope.projects = res.data;
-    });
 });
