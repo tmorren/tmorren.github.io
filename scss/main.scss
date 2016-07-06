@@ -1,6 +1,7 @@
 $orange: #ef3e24;
 $blue: #35869D;
-$gray: #f6f6f6;
+$light-gray: #f6f6f6;
+$dark-gray: #404040;
 $light-text: white;
 $dark-text: #333333;
 $header-font: 'Cabin', sans-serif;
@@ -220,7 +221,7 @@ $paragraph-font: 'Roboto', sans-serif;
 		About Section
 =======================*/
 	#aboutSection{
-		background-color: $gray;
+		background-color: $light-gray;
 		h2{
 			color: $blue;
 		}
@@ -248,7 +249,7 @@ $paragraph-font: 'Roboto', sans-serif;
 		Projects Section
 =======================*/
 	#projectsSection{
-		background-color: $gray;
+		background-color: $light-gray;
 		ul{
 			padding-left: 0;
 			.techItem{
@@ -268,7 +269,7 @@ $paragraph-font: 'Roboto', sans-serif;
 					width: 50%;
 					display: block;
 					box-sizing: border-box;
-					border: 3px solid black;
+					border-right: 3px solid $dark-gray;
 					float: left;
 				}
 				.projectInfo{
@@ -300,7 +301,7 @@ $paragraph-font: 'Roboto', sans-serif;
 		margin-top: 2em;
 	}
 
-	@media (min-width: 920px) and (max-width: 1120px){
+	@media (min-width: 640px) and (max-width: 1210px){
 		#projectsSection{
 			ul{
 				.projectContain{
@@ -312,6 +313,8 @@ $paragraph-font: 'Roboto', sans-serif;
 					margin-right: 1%;
 					img{
 						width: 100%;
+						border-right: none;
+						border-bottom: 3px solid $dark-gray;
 					}
 					.projectInfo{
 						width: 100%;
@@ -321,13 +324,15 @@ $paragraph-font: 'Roboto', sans-serif;
 		}
 	}
 
-	@media (max-width: 919px){
+	@media (max-width: 639px){
 		#projectsSection{
 			ul{
 				.projectContain{
 					width: 100%;
 					img{
 						width: 100%;
+						border-right: none;
+						border-bottom: 3px solid $dark-gray;
 					}
 					.projectInfo{
 						width: 100%;
