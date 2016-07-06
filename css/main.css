@@ -115,6 +115,14 @@ nav ul li a {
   border: 1px solid blue;
 }
 
+.fa-bars {
+  color: white;
+}
+
+#btn-small-nav:hover {
+  cursor: pointer;
+}
+
 #mobile-menu {
   display: none;
   width: 100%;
@@ -139,6 +147,10 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+#mobile-menu ul li a:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 680px) {

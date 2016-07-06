@@ -118,6 +118,18 @@ $paragraph-font: 'Roboto', sans-serif;
 		border: 1px solid blue;
 	}
 
+	.fa-bars{
+		color: white;
+	}
+
+	.fa-close{
+		color: black;
+	}
+
+	#btn-small-nav:hover{
+		cursor: pointer;
+	}
+
 	#mobile-menu{
 		display: none;
 		width: 100%;
@@ -139,6 +151,9 @@ $paragraph-font: 'Roboto', sans-serif;
 					text-decoration: none;
 					text-transform: uppercase;
 					font-weight: bold;
+				}
+				a:hover{
+					cursor: pointer;
 				}			
 			}
 		}

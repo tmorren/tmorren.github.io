@@ -8,6 +8,15 @@ $(document).ready(function(){
 	$("#btn-small-nav").click(function(){
 		$("#mobile-menu").slideToggle(200);
 		$("#btn-small-nav").toggleClass("fa-bars fa-close")
+		$(".fa-close").css("color", "black");
+
+		var scrollTop = $(window).scrollTop();
+		var header = $("header").height();
+		if (scrollTop >= header/4){
+			$(".fa-bars").css("color", "black");
+		} else {
+			$(".fa-bars").css("color", "white");
+		}
 	})
 
 	/* When a link is clicked, the menu disappears */
@@ -33,8 +42,10 @@ $(document).ready(function(){
 
 		if (scrollTop >= header/4){
 			$("nav").addClass('solid-nav');
+			$(".fa-bars").css("color", "black");
 		} else {
 			$("nav").removeClass('solid-nav');
+			$(".fa-bars").css("color", "white");
 		}
 	})
 
