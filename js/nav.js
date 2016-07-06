@@ -10,6 +10,13 @@ $(document).ready(function(){
 		$("#btn-small-nav").toggleClass("fa-bars fa-close")
 	})
 
+	/* When a link is clicked, the menu disappears */
+	$(".btnMobileLink").click(function(){
+		$("#mobile-menu").slideToggle(200);
+		$("#btn-small-nav").removeClass("fa-close");
+		$("#btn-small-nav").addClass("fa-bars");
+	})
+
 	/* Makes Mobile Menu Disappear on Resize*/
 	$(window).resize(function(){
 		if ( $(window).width() > 680){

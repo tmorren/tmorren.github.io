@@ -5,9 +5,10 @@ app.controller('projectsCtrl', function($scope){
 	$scope.projects = [
 		{
 			"name" : "Portfolio Website", 
-	    	"description" : "This is my Portfolio Website",
+	    	"description" : "This is my Portfolio Website to showcase the work I have done.",
 	    	"image" : "project-portfolio.png",
 	    	"link" : "https://www.tylermorren.com",
+	    	"github" : "https://github.com/tmorren/tmorren.github.io",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
 		},
 		{
@@ -15,6 +16,7 @@ app.controller('projectsCtrl', function($scope){
 	    	"description" : "A TODO List that allows the user to save the data to local storage. ",
 	    	"image" : "project-todo.png",
 	    	"link" : "https://www.tylermorren.com/TODO-List",
+	    	"github" : "https://github.com/tmorren/TODO-List",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "AngularJS"]
 		},
 		{
@@ -28,3 +30,11 @@ app.controller('projectsCtrl', function($scope){
 
 });
 
+/*var maxHeight = 0;
+	$(".projectContain").each(function(){
+	   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+	});
+
+	$(".projectContain").height(maxHeight);
+
+	console.log(maxHeight);*/

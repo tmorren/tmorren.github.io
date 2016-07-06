@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tyler Morren | Web Developer</title>
+	<title>Tyler S. Morren | Web Developer</title>
 	<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -27,10 +27,10 @@
 	<!-- Mobile Navigation Menu -->
 	<div id="mobile-menu">
 		<ul>
-			<li><a href="#aboutSection">About</a></li>
-			<li><a href="#educationSection">Education</a></li>
-			<li><a href="#projectsSection">Projects</a></li>
-			<li><a href="#contactSection">Contact</a></li>
+			<li><a href="#aboutSection" class="btnMobileLink">About</a></li>
+			<li><a href="#educationSection" class="btnMobileLink">Education</a></li>
+			<li><a href="#projectsSection" class="btnMobileLink">Projects</a></li>
+			<li><a href="#contactSection" class="btnMobileLink">Contact</a></li>
 		</ul>
 	</div>
 
@@ -47,8 +47,9 @@
 	<section id="aboutSection" class="row">
 		<div class="container">
 			<h2>About</h2>
-			<p>My name is <strong>Tyler S. Morren</strong>, and I am a <strong>Web Developer</strong>. I originally went to school for Civil Engineering, but during my last semester, I realized I had made a mistake. So I decided to start learning about something that had always interested me. I began teaching myself the basics or Web Development while finishing school.</p>
-			<p>Two days after I graduated with my Civil Engineering degree, I was back in school learning Web Development. Since then, I have received a Web Development Certificate and have continued to learn as much as I can about the field. I have experience with <strong>HTML, CSS, JavaScript, jQuery, PHP, MySQL, WordPress and AngularJS.</strong></p>
+			<p>My name is <strong>Tyler S. Morren</strong>, and I am a <strong>Web Developer</strong>. I originally went to school for Civil Engineering, but during my last semester, I realized I wanted to do something different. So I started teaching myself the basics of Web Development while finishing school. I learned the basics of <strong>HTML, CSS, and JavaScript</strong> through Khan Academy and loved it.</p>
+			<p>Two days after I graduated with my Civil Engineering degree, I was back in school for Web Development. Since then, I have received a <strong>Web Development Certificate</strong> and have continued to learn as much as I can about the field. In school, on top of the basics, I learned how to use <strong>PHP, MySQL, jQuery, Bootstrap, and WordPress.</strong></p>
+			<p>In my free time, I have been doing my best to keep up with current web technologies. My next goal is to learn more about <strong>AngularJS and Node.js.</strong></p>
 		</div>
 	</section>
 
@@ -57,8 +58,8 @@
 		<div class="container">
 			<h2>Education</h2>
 			<h3>Rutgers University <span class="eduYears">(2010-2015)</span></h3>
-			<h4><i>Civil Engineering</i></h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<h4><i>Civil Engineering B.S.</i></h4>
+			<p>Although Civil Engineering isn't directly related to Web Development, I learned a lot of valuable skills. The most important skills I learned were critical thinking and planning.</p>
 
 			<h3>Raritan Valley Community College <span class="eduYears">(2015-2016)</span></h3>
 			<h4><i>Web Development Certificate</i></h4>
@@ -77,6 +78,7 @@
 						<h3 data-ng-bind="project.name"></h3>
 						<p data-ng-bind="project.description"></p>
 						<a data-ng-href="{{ project.link }}" target="_blank"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+						<a data-ng-href="{{ project.github }}" target="_blank" data-ng-show="'{{ project.github }}' != ''"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 						<ul>
 							<li data-ng-repeat="tech in project.tech" data-ng-bind="tech" class="techItem"></li>
 						</ul>
