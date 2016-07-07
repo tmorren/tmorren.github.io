@@ -119,6 +119,10 @@ nav ul li a {
   color: white;
 }
 
+.fa-close {
+  color: black;
+}
+
 #btn-small-nav:hover {
   cursor: pointer;
 }
@@ -143,10 +147,16 @@ nav ul li a {
   color: black;
 }
 
+#mobile-menu ul li {
+  margin-bottom: 1em;
+}
+
 #mobile-menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.5em;
+  color: #35869D;
 }
 
 #mobile-menu ul li a:hover {
@@ -250,6 +260,11 @@ header #btnDown {
   color: #35869D;
 }
 
+#aboutSection a {
+  color: #35869D;
+  text-decoration: none;
+}
+
 /*=======================
 		Education Section
 =======================*/
@@ -307,6 +322,10 @@ header #btnDown {
   padding: 1.25em 2em 1.25em 2em;
 }
 
+#projectsSection ul li .projectInfo li {
+  margin-bottom: .25em;
+}
+
 #projectsSection ul li .projectInfo p {
   font-size: 1.25em;
   line-height: 1.5em;
@@ -322,6 +341,7 @@ header #btnDown {
 
 #projectsSection ul li .projectInfo i {
   margin-bottom: .5em;
+  margin-right: .25em;
 }
 
 .projectContain {
@@ -360,4 +380,25 @@ header #btnDown {
   #projectsSection ul .projectContain .projectInfo {
     width: 100%;
   }
+}
+
+/*=======================
+		Footer
+=======================*/
+footer {
+  background-color: #35869D;
+  color: white;
+  text-align: center;
+}
+
+footer .fa-github {
+  color: white;
+}
+
+footer .fa-instagram {
+  color: white;
+}
+
+footer .fa-linkedin-square {
+  color: white;
 }
