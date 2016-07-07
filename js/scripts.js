@@ -9,7 +9,7 @@ app.controller('projectsCtrl', function($scope){
 	    	"image" : "project-portfolio.png",
 	    	"link" : "https://www.tylermorren.com",
 	    	"github" : "https://github.com/tmorren/tmorren.github.io",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS", "test1", "test2"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
 		},
 		{
 			"name" : "TODO List", 
