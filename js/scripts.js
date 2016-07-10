@@ -9,7 +9,7 @@ app.controller('projectsCtrl', function($scope){
 	    	"image" : "project-portfolio.png",
 	    	"link" : "https://www.tylermorren.com",
 	    	"github" : "https://github.com/tmorren/tmorren.github.io",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS", "Responsive"]
 		},
 		{
 			"name" : "TODO List", 
@@ -17,14 +17,14 @@ app.controller('projectsCtrl', function($scope){
 	    	"image" : "project-todo.png",
 	    	"link" : "https://www.tylermorren.com/TODO-List",
 	    	"github" : "https://github.com/tmorren/TODO-List",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "AngularJS"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "AngularJS", "Responsive"]
 		},
 		{
 			"name" : "VerQu Website", 
 	    	"description" : "I worked with a designer to create the company site for VerQu",
 	    	"image" : "project-verqu.png",
 	    	"link" : "https://www.verqu.com",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "WordPress"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "WordPress", "Responsive"]
 		}
 	];
 
