@@ -248,6 +248,25 @@ $paragraph-font: 'Roboto', sans-serif;
 			color: $blue;
 			text-decoration: none;
 		}
+		img{
+			width: 100%;
+			max-width: 200px;
+			margin-right: 2em;
+			margin-bottom: 1em;
+			border-radius: 50%;
+			border: 3px solid $blue;
+			float: left;
+		}
+	}
+
+	@media(max-width: 460px){
+		#aboutSection{
+			img{
+				float: none;
+				width: 100%;
+				max-width: none;
+			}
+		}
 	}
 
 /*=======================
