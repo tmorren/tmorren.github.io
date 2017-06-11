@@ -13,8 +13,8 @@ app.controller('projectsCtrl', function($scope){
 		},
 		{
 			"name" : "Synkros.io", 
-	    	"description" : "Synkros is an application for timesheets. Each client is dynamically given a subdomain and database.",
-	    	"link" : "http://www.synkros.io",
+	    	"description" : "To read a desciption of the project, click the link below.",
+	    	"link" : "http://www.tylermorren.com/Synkros-Info",
 	    	"image" : "project-synkros.png",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"]
 		},
