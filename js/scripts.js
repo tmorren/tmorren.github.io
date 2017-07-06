@@ -19,11 +19,19 @@ app.controller('projectsCtrl', function($scope){
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"]
 		},
 		{
+			"name" : "colorMatch", 
+	    	"description" : "A color matching game for the browser.",
+	    	"image" : "project-colormatch.png",
+	    	"link" : "http://www.tylermorren.com/colorMatch/",
+	    	"github" : "https://github.com/tmorren/colorMatch/tree/gh-pages",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery"]
+		},
+		{
 			"name" : "TODO List", 
 	    	"description" : "A TODO List that allows the user to save the data to local storage. ",
 	    	"image" : "project-todo.png",
 	    	"link" : "https://www.tylermorren.com/TODO-List",
-	    	"github" : "https://github.com/tmorren/TODO-List",
+	    	"github" : "https://github.com/tmorren/TODO-List/tree/gh-pages",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "AngularJS", "Responsive"]
 		},
 		{

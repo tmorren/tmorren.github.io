@@ -346,6 +346,7 @@ $paragraph-font: 'Roboto', sans-serif;
 	.projectContain{
 		clear: both;
 		margin-top: 2em;
+		box-shadow: 3px 3px 6px #dedbdb;
 	}
 
 	@media (min-width: 640px) and (max-width: 1210px){
