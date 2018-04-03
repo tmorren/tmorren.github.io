@@ -19,6 +19,14 @@ app.controller('projectsCtrl', function($scope){
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"]
 		},
 		{
+			"name" : "NBA Stats", 
+	    	"description" : "A modern clone of the NBA website developed using Angular4.",
+	    	"image" : "project-nbastats.png",
+	    	"link" : "https://www.tm-nbastats.com/",
+	    	"github" : "https://github.com/tmorren/nba-stats",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular4", "ChartJS"]
+		},
+		{
 			"name" : "colorMatch", 
 	    	"description" : "A color matching game for the browser.",
 	    	"image" : "project-colormatch.png",
@@ -42,7 +50,7 @@ app.controller('projectsCtrl', function($scope){
 		},
 		{
 			"name" : "VerQu Website", 
-	    	"description" : "I worked with a designer to create the company site for VerQu",
+	    	"description" : "I worked with a designer to create the company site for VerQu.",
 	    	"image" : "project-verqu.png",
 	    	"link" : "https://www.verqu.com",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "WordPress", "Responsive"]
