@@ -12,6 +12,13 @@ app.controller('projectsCtrl', function($scope){
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS", "Responsive"]
 		},
 		{
+			"name" : "The Follow-up Tool", 
+	    	"description" : "Part of team that created The Follow-up Tool. Click link for more info.",
+	    	"link" : "http://www.thefollowuptool.com/",
+	    	"image" : "project-followuptool.png",
+	    	"tech" : ["HTML", "CSS", "Angular2", "Laravel", "Socket.io", "MySQL"]
+		},
+		{
 			"name" : "Synkros.io", 
 	    	"description" : "To read a desciption of the project, click the link below.",
 	    	"link" : "http://www.tylermorren.com/Synkros-Info",
