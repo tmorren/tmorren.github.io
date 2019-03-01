@@ -251,21 +251,34 @@ $paragraph-font: 'Roboto', sans-serif;
 			color: $blue;
 			text-decoration: none;
 		}
+		.imgContain{
+			background: linear-gradient( 135deg, $green 0%, $blue 100%);
+			border-radius: 1000px;
+			width: 100%;
+			float: left;
+			width: auto;
+			margin-right: 2em;
+    	margin-bottom: 1em;
+			// #box{
+			// 	background: black;
+			// 	width: 300px;
+			// 	height: 300px;
+			// 	border-radius: 1000px;
+			// }
+		}
 		img{
 			width: 100%;
 			max-width: 200px;
-			margin-right: 2em;
-			margin-bottom: 1em;
 			border-radius: 50%;
-			border: 3px solid $blue;
+			padding: .25em;
 			float: left;
+			box-sizing: border-box;
 		}
 	}
 
-	@media(max-width: 460px){
+	@media(max-width: 410px){
 		#aboutSection{
 			img{
-				float: none;
 				width: 100%;
 				max-width: none;
 			}

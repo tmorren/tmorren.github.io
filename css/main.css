@@ -204,26 +204,23 @@ header {
     color: #155799;
     text-decoration: none; }
   #aboutSection .imgContain {
-    background: -webkit-linear-gradient(315deg, #159957 0%, #155799 100%);
-    background: -o-linear-gradient(315deg, #159957 0%, #155799 100%);
-    background: linear-gradient(135deg, #159957 0%, #155799 100%);
+    background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
     border-radius: 1000px;
     width: 100%;
     float: left;
-    width: auto;
-    margin-right: 2em;
-    margin-bottom: 1em; }
+    width: auto; }
   #aboutSection img {
     width: 100%;
     max-width: 200px;
+    margin-right: 2em;
+    margin-bottom: 1em;
     border-radius: 50%;
-    padding: .25em;
-    float: left;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    border: 3px solid #155799;
+    float: left; }
 
-@media (max-width: 410px) {
+@media (max-width: 460px) {
   #aboutSection img {
+    float: none;
     width: 100%;
     max-width: none; } }
 

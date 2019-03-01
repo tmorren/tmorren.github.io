@@ -26,6 +26,13 @@ app.controller('projectsCtrl', function($scope){
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"]
 		},
 		{
+			"name" : "NBA Compare", 
+	    	"description" : "A fantasy NBA comparison utility. Save leagues to local storage.",
+	    	"image" : "project-nbacompare.png",
+	    	"link" : "https://www.nba-compare.com/",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular4", "Angular Material"]
+		},
+		{
 			"name" : "NBA Stats", 
 	    	"description" : "A modern clone of the NBA website developed using Angular4.",
 	    	"image" : "project-nbastats.png",
