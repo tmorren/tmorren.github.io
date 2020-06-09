@@ -138,9 +138,9 @@ nav {
 =======================*/
 header {
   height: 100vh;
-  background-image: -webkit-linear-gradient(315deg, #159957 0%, #155799 100%);
-  background-image: -o-linear-gradient(315deg, #159957 0%, #155799 100%);
-  background-image: linear-gradient(135deg, #159957 0%, #155799 100%);
+  background-image: -webkit-linear-gradient(315deg, #851599 0%, #155799 100%);
+  background-image: -o-linear-gradient(315deg, #851599 0%, #155799 100%);
+  background-image: linear-gradient(135deg, #851599 0%, #155799 100%);
   background-position: center;
   position: relative; }
   header h1 {

@@ -16,7 +16,14 @@ app.controller('projectsCtrl', function($scope){
 	    	"description" : "Part of team that created The Follow-up Tool. Click link for more info.",
 	    	"link" : "http://www.thefollowuptool.com/",
 	    	"image" : "project-followuptool.png",
-	    	"tech" : ["HTML", "CSS", "Angular2", "Laravel", "Socket.io", "MySQL"]
+	    	"tech" : ["HTML", "CSS", "Angular2+", "Laravel", "NodeJS", "Socket.io", "Express", "MySQL"]
+		},
+		{
+			"name" : "gamepack.io", 
+	    	"description" : "Co-founder/developer. Platform to play games and video chat with friends.",
+	    	"link" : "https://www.gamepack.io/",
+	    	"image" : "project-gamepack.png",
+	    	"tech" : ["HTML", "CSS", "Angular2+", "NodeJS", "MongoDB", "Socket.io", "Express", "WebRTC", "Heroku"]
 		},
 		{
 			"name" : "Synkros.io", 
@@ -30,7 +37,7 @@ app.controller('projectsCtrl', function($scope){
 	    	"description" : "A fantasy NBA comparison utility. Save leagues to local storage.",
 	    	"image" : "project-nbacompare.png",
 	    	"link" : "https://www.nba-compare.com/",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular4", "Angular Material"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular2+", "Angular Material"]
 		},
 		{
 			"name" : "NBA Stats", 
@@ -38,7 +45,7 @@ app.controller('projectsCtrl', function($scope){
 	    	"image" : "project-nbastats.png",
 	    	"link" : "https://www.tm-nbastats.com/",
 	    	"github" : "https://github.com/tmorren/nba-stats",
-	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular4", "ChartJS"]
+	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular2+", "ChartJS"]
 		},
 		{
 			"name" : "colorMatch", 
@@ -66,7 +73,6 @@ app.controller('projectsCtrl', function($scope){
 			"name" : "VerQu Website", 
 	    	"description" : "I worked with a designer to create the company site for VerQu.",
 	    	"image" : "project-verqu.png",
-	    	"link" : "https://www.verqu.com",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "WordPress", "Responsive"]
 		}
 	];
