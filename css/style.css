@@ -13,7 +13,7 @@ body {
     font-family: "Cabin", sans-serif;
     text-transform: uppercase; }
   body h2 {
-    color: #155799; }
+    color: #363636; }
 
 .row {
   width: 100%;
@@ -119,7 +119,7 @@ nav {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.5em;
-        color: #155799; }
+        color: #4e3599; }
       #mobile-menu ul li a:hover {
         cursor: pointer; }
 
@@ -197,7 +197,7 @@ header {
 #aboutSection {
   background-color: #f0f0f0; }
   #aboutSection h2 {
-    color: #155799; }
+    color: #363636; }
   #aboutSection strong {
     color: #155799; }
   #aboutSection a {
@@ -248,12 +248,12 @@ header {
     padding-left: 0; }
     #projectsSection ul .techItem {
       display: inline-block;
-      border: 2px solid #155799;
-      font-weight: bold;
-      font-size: .9em;
-      color: #155799;
+      font-size: .8em;
+      color: white;
       margin-right: .5em;
-      padding: .2em; }
+      padding: .5em;
+      border-radius: 1em;
+      background: #4e3599;}
     #projectsSection ul li {
       list-style: none;
       display: block;
