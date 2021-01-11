@@ -43,7 +43,6 @@ app.controller('projectsCtrl', function($scope){
 			"name" : "NBA Stats", 
 	    	"description" : "A modern clone of the NBA website developed using Angular4.",
 	    	"image" : "project-nbastats.png",
-	    	"link" : "https://www.tm-nbastats.com/",
 	    	"github" : "https://github.com/tmorren/nba-stats",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular2+", "ChartJS"]
 		},
