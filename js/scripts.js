@@ -7,16 +7,15 @@ app.controller('projectsCtrl', function($scope){
 			"name" : "Portfolio Website", 
 	    	"description" : "This is my Portfolio Website to showcase the work I have done.",
 	    	"image" : "project-portfolio.png",
-	    	"link" : "https://www.tylermorren.com",
 	    	"github" : "https://github.com/tmorren/tmorren.github.io",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "jQuery", "AngularJS", "Responsive"]
 		},
 		{
-			"name" : "The Follow-up Tool", 
-	    	"description" : "Part of team that created The Follow-up Tool. Click link for more info.",
-	    	"link" : "http://www.thefollowuptool.com/",
-	    	"image" : "project-followuptool.png",
-	    	"tech" : ["HTML", "CSS", "Angular2+", "Laravel", "NodeJS", "Socket.io", "Express", "MySQL"]
+			"name" : "Lightspeed Quantum", 
+	    	"description" : "Part of team that created the CRM Lightspeed Quantum. Click link for more info.",
+	    	"link" : "https://www.lightspeedvoice.com/products-quantum",
+	    	"image" : "project-quantum.png",
+	    	"tech" : ["Team Management", "Angular2+", "Laravel", "NodeJS", "Socket.io", "MySQL"]
 		},
 		{
 			"name" : "gamepack.io", 
@@ -36,7 +35,6 @@ app.controller('projectsCtrl', function($scope){
 			"name" : "NBA Compare", 
 	    	"description" : "A fantasy NBA comparison utility. Save leagues to local storage.",
 	    	"image" : "project-nbacompare.png",
-	    	"link" : "https://www.nba-compare.com/",
 	    	"tech" : ["HTML", "CSS", "JavaScript", "Angular2+", "Angular Material"]
 		},
 		{
