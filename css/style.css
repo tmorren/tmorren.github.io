@@ -7,7 +7,6 @@ body {
   font-family: "Roboto", sans-serif; }
   body p {
     margin-top: 0;
-    font-size: 1.25em;
     line-height: 1.5em; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Cabin", sans-serif;
@@ -231,13 +230,33 @@ header {
 		Education Section
 =======================*/
 #educationSection .eduYears {
-  font-size: .75em; }
+  font-size: .75em;
+  margin-left: 0.5em;
+  font-weight: 200; 
+  color: #b9b9b9;
+}
 
 #educationSection h3 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 #educationSection h4 {
-  margin-top: 0; }
+  margin-top: 0.25em;
+  font-weight: 200;
+  text-transform: none;
+  color: gray;
+}
+
+.eduContainer {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 1em 0;
+}
+
+.eduContainer:last-child  {
+  border-bottom: none;
+  padding-top: 1em;
+}
+
 
 /*=======================
 		Projects Section
