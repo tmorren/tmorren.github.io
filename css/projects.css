@@ -1,0 +1,113 @@
+/*=======================
+    Projects Section
+=======================*/
+#projectsSection ul {
+    padding-left: 0; 
+}
+
+#projectsSection ul .techItem {
+    display: inline-block;
+    font-size: .8em;
+    color: white;
+    margin-right: .5em;
+    padding: .5em;
+    border-radius: 1em;
+    background: #673ceb;
+}
+
+#projectsSection ul li {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    background-color: white; 
+}
+
+#projectsSection ul li img {
+    width: 50%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #d7d7d7;
+    float: left; 
+}
+
+#projectsSection ul li .projectInfo {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 1.25em 2em 1.25em 2em; 
+}
+
+#projectsSection ul li .projectInfo li {
+    margin-top: .25em;
+    margin-bottom: .25em; 
+}
+
+#projectsSection ul li .projectInfo p {
+    font-size: 1em;
+    line-height: 1.25em; 
+}
+
+#projectsSection ul li .projectInfo h3 {
+    margin-top: 0; 
+}
+
+#projectsSection ul li .projectInfo a {
+    color: black; 
+}
+
+#projectsSection ul li .projectInfo i {
+    margin-bottom: .5em;
+    margin-right: .25em; 
+}
+
+.projectContain {
+    clear: both;
+    margin-top: 2em;
+    -webkit-box-shadow: 3px 3px 20px 1px #bdbdbd;
+    box-shadow: 3px 3px 20px 1px #bdbdbd;
+    border-radius: 0.25em;
+    position: relative;
+    top: 0;
+    transition: top ease 0.25s;
+}
+
+.projectContain:hover {
+    top: -5px;
+}
+
+
+#projectsSection ul .projectContain {
+    width: 48%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    clear: none;
+    margin-left: 1%;
+    margin-right: 1%; 
+}
+
+#projectsSection ul .projectContain img {
+    width: 100%;
+    border-right: none;
+    border-bottom:1px solid #d7d7d7;
+}
+
+#projectsSection ul .projectContain .projectInfo {
+    width: 100%; 
+} 
+
+@media (max-width: 639px) {
+    #projectsSection ul .projectContain {
+        width: 100%; 
+    }
+    #projectsSection ul .projectContain img {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    #projectsSection ul .projectContain .projectInfo {
+        width: 100%; 
+    } 
+}

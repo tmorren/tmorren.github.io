@@ -1,0 +1,71 @@
+/*======================
+	Header - Deprecated, was used with full height header
+=======================*/
+header {
+    height: 100vh;
+    background-image: -webkit-linear-gradient(315deg, #851599 0%, #155799 100%);
+    background-image: -o-linear-gradient(315deg, #851599 0%, #155799 100%);
+    background-image: linear-gradient(135deg, #851599 0%, #155799 100%);
+    background-position: center;
+    position: relative; 
+}
+  
+header h1 {
+    letter-spacing: .3em; 
+}
+  
+header img {
+    width: 100%; 
+}
+  
+header div {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+header div h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase; 
+}
+  
+header #btnDown {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+#btnDown {
+    display: inline-block;
+    border-radius: 50%; 
+}
+  
+#downArrow {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    border: 0.2em solid white;
+    border-radius: 50%; 
+}
+  
+#downArrow:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.75em;
+    width: 1em;
+    height: 1em;
+    border-top: 0.2em solid white;
+    border-right: 0.2em solid white;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-left: .87em; 
+}

@@ -1,0 +1,33 @@
+/*=======================
+		About Section
+=======================*/
+#aboutSection {
+    padding-top: 50px; /* To account for fixed header */
+}
+
+#aboutSection .imgContain {
+    background: white;
+    border-radius: 1000px;
+    box-shadow: 3px 3px 6px #dedbdb;
+    width: 150px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em; 
+}
+
+#aboutSection img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    padding: .25em;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+  
+@media (max-width: 410px) {
+    #aboutSection img {
+      width: 100%;
+      max-width: none; 
+    } 
+}

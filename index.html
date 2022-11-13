@@ -5,7 +5,14 @@
 	<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/education.css">
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -44,9 +51,9 @@
 	<!-- About Section -->
 	<section id="aboutSection" class="row">
 		<div class="container">
-			<h2>About</h2>
+			<div class="imgContain"><img src="img/tsm-profile-pic-sm.jpg"></div>
 
-			<div class="imgContain"><img src="img/tsm-profile-pic-sm.jpg"></div><p>My name is <strong>Tyler S. Morren</strong>, and I am a <strong>Software Engineer</strong>. I originally went to school for Civil Engineering, but during my last semester, I realized I wanted to do something different. So I started teaching myself the basics of Web Development while finishing school. I learned the basics of <strong>HTML, CSS, and JavaScript</strong> through Khan Academy and loved it.</p>
+			<p>My name is <strong>Tyler S. Morren</strong>, and I am a <strong>Software Engineer</strong>. I originally went to school for Civil Engineering, but during my last semester, I realized I wanted to do something different. So I started teaching myself the basics of Web Development while finishing school. I learned the basics of <strong>HTML, CSS, and JavaScript</strong> through Khan Academy and loved it.</p>
 
 			<p>Two days after I graduated with my Civil Engineering degree, I was back in school for Web Development. Since then, I have received a <strong>Web Development Certificate</strong> and have continued to learn as much as I can about the field. In school I learned about <strong>PHP, MySQL, jQuery, Bootstrap, and WordPress.</strong> In my free time, I learn about emerging web technologies and diversify my skills.</p>
 
@@ -61,7 +68,7 @@
 	<!-- Education Section -->
 	<section id="educationSection" class="row">
 		<div class="container">
-			<h2>Education / Certificates</h2>
+			<h2 class="sectionHeader mainColor">Education / Certificates</h2>
 
 			<div class="eduContainer">
 				<h3>Rutgers University <span class="eduYears">2010-2015</span></h3>
@@ -93,7 +100,7 @@
 	<!-- Projects Section -->
 	<section id="projectsSection" class="row" data-ng-app="projectsApp">
 		<div class="container" data-ng-controller="projectsCtrl">
-			<h2>Projects</h2>
+			<h2 class="sectionHeader mainColor">Projects</h2>
 			<ul>
 				<li data-ng-repeat="project in projects" class="projectContain">
 					<img data-ng-src="img/{{ project.image }}">
