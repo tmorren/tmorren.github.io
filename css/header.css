@@ -1,7 +1,88 @@
+#headerSection {
+    background-image: -webkit-linear-gradient(315deg, #851599 0%, #155799 100%);
+    background-image: -o-linear-gradient(315deg, #851599 0%, #155799 100%);
+    background-image: linear-gradient(135deg, #851599 0%, #155799 100%);
+}
+
+#headerSection .container {
+    height: 200px;
+    position: relative;
+}
+
+#headerSection .container img{
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 150px;
+    position: absolute;
+    bottom: -75px;
+    left: 1em;
+}
+
+.nameHeader {
+    color: white;
+    text-transform: none;
+    position: absolute;
+    bottom: 0.4em;
+    left: 200px;
+}
+
+.titleHeader {
+    text-transform: none;
+    position: absolute;
+    bottom: -.75em;
+    left: 200px;
+    color: #c1c1c1;
+    font-weight: 500;
+}
+
+.connectContainer {
+    position: absolute;
+    bottom: -2.25em;
+    left: 200px;
+}
+
+.connectContainer a {
+    color: #6d6d6d;
+}
+
+@media (max-width: 350px) {
+    #headerSection .container img {
+        border-radius: 100%;
+        border: 4px solid white;
+        width: 100px;
+        position: absolute;
+        bottom: -54px;
+        left: 1em;
+    }
+
+    .nameHeader {
+        color: white;
+        text-transform: none;
+        position: absolute;
+        bottom: 0.4em;
+        left: 140px;
+        font-size: 1.25em;
+    }
+
+    .titleHeader {
+        text-transform: none;
+        position: absolute;
+        bottom: -0.75em;
+        left: 140px;
+        color: #c1c1c1;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .connectContainer {
+        left: 140px
+    }
+}
+
 /*======================
 	Header - Deprecated, was used with full height header
 =======================*/
-header {
+/* header {
     height: 100vh;
     background-image: -webkit-linear-gradient(315deg, #851599 0%, #155799 100%);
     background-image: -o-linear-gradient(315deg, #851599 0%, #155799 100%);
@@ -68,4 +149,4 @@ header #btnDown {
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
     margin-left: .87em; 
-}
+} */
