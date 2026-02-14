@@ -20,6 +20,22 @@ app.controller('projectsCtrl', function($scope){
 	    	"tech" : ["Team Management", "Angular2+", "Laravel", "NodeJS", "Socket.io", "MySQL"]
 		},
 		{
+			"name" : "GitFlex", 
+	    	"description" : "A Chrome Extension that adds quality of life features to GitHub. Click link for more info.",
+	    	"link" : "https://chromewebstore.google.com/detail/gitflex-for-github/mchhhlkgpmiinbnonjpeillinmgaoein",
+	    	"image" : "project-gitflex.png",
+				"company" : "Visual Zone Development",
+	    	"tech" : ["HTML", "CSS", "JavaScript", "Chrome Extension"]
+		},
+		{
+			"name" : "Context Recall", 
+	    	"description" : "A VSCode Extension that allows users to save and load their workspace context. Click link for more info.",
+	    	"link" : "https://marketplace.visualstudio.com/items?itemName=VisualZoneDevelopment.context-recall",
+	    	"image" : "project-context-recall.png",
+				"company" : "Visual Zone Development",
+	    	"tech" : ["Typescript", "NodeJS", "VSCode Extension"]
+		},
+		{
 			"name" : "gamepack.io", 
 	    	"description" : "Co-founder/developer. Platform to play games and video chat with friends.",
 	    	"link" : "https://www.gamepack.io/",
